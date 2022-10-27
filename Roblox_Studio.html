@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/Roblox_Studio.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class="fa-brands fa-dyalog icon"></i>
+        <div class="logo_name">Dark_Studio</div>
+        <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+         <i class="fa-solid fa-magnifying-glass fa-2xs"></i>
+         <input type="text" placeholder="Search... Disabled">
+         <span class="tooltip">Search - Temporarily Disabled</span>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class="fa-solid fa-house"></i>
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+      <li>
+       <a href="Roblox_Studio.html">
+        <i class="fa-solid fa-hammer"></i>
+         <span class="links_name">Roblox Studio</span>
+       </a>
+       <span class="tooltip">Roblox Studio</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <div class="name_job">
+             <div class="name"><a href="https://www.roblox.com/users/1561069702/profile" target="_blank">@AMMARUDES123</a></div>
+             <div class="job">Creator of this website</div>
+           </div>
+         </div>
+         <i class='bx bx-user' id="log_out"></i>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text">Roblox Studio Models</div>
+      <div class="Roblox_Studio">
+        <div class="RS-1">
+            <a href="https://www.roblox.com/library/10901767801/Nuke-Gamepass" target="_blank"><img src="images/Coding.png" alt="#"></a>
+            <h2 style="text-align: center;">Nuke Gamepass</h2>
+        </div>
+        <div class="RS-2">
+            <a href="https://www.roblox.com/library/8484482868/GamepassShop" target="_blank"><img src="images/Coding.png" alt="#"></a>
+            <h2 style="text-align: center; padding: 0px 0px 0px 80px;">Donation Board</h2>
+        </div>
+        <div class="RS-3">
+            <a href="https://www.roblox.com/library/9851588592/Pls-Donate-Map" target="_blank"><img src="images/Coding.png" alt="#"></a>
+            <h2 style="text-align: center; padding: 0px 0px 0px 80px;">Pls Donate Map</h2>
+        </div>
+      </div>
+  </section>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+</body>
+</html>
