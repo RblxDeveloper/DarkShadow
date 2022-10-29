@@ -6,29 +6,6 @@
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
-
-/* width */
-::-webkit-scrollbar {
-  width: 7px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f3f3f3;
-  border-radius: 5px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #1d1b31;
-  border-radius: 5px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #11101d;
-}
-
 .sidebar{
   position: fixed;
   left: 0;
@@ -278,3 +255,47 @@
 .home-section .text {
     margin-right: 200px;
 }
+
+/* more */
+
+.accordion {
+    width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 4px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.95rem 1rem;
+    width: 100%;
+    background: #1d1b31;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #E4E9F7;
+    color: #f3f3f3;
+    cursor: pointer;
+  }
+  
+  .accordion-header.active {
+    background-color: #11101d;
+  }
+  .accordion-header.active i {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .accordion-body {
+    padding: 0 10rem;
+    background-color: #f3f3f3;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .accordion-body.active {
+    max-height: 10rem;
+    padding: 1rem;
+  }

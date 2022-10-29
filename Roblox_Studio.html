@@ -3,23 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/Roblox_Studio.css">
+    <link rel="stylesheet" href="css/Roblox_studio.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/logo.png">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="images/x-icon" href="images/logo.png">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
    </head>
 <body>
   <div class="sidebar">
     <div class="logo-details">
       <i class="fa-brands fa-dyalog icon"></i>
         <div class="logo_name">Dark_Studio</div>
-        <i class='bx bx-menu' id="btn"></i>
+        <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
       <li>
-         <i class="fa-solid fa-magnifying-glass fa-2xs"></i>
-         <input type="text" placeholder="Search... Disabled">
-         <span class="tooltip">Search - Temporarily Disabled</span>
+          <i class='bx bx-search' ></i>
+         <input type="search" id="search" placeholder="Search... Disabled">
+         <span class="tooltip">Search</span>
       </li>
       <li>
         <a href="index.html">
@@ -35,32 +36,94 @@
        </a>
        <span class="tooltip">Roblox Studio</span>
      </li>
+     <li>
+       <a href="updates.html">
+        <i class="fa-solid fa-list-check"></i>
+         <span class="links_name">Updates</span>
+       </a>
+       <span class="tooltip">Updates</span>
+     </li>
      <li class="profile">
          <div class="profile-details">
            <div class="name_job">
-             <div class="name"><a href="https://www.roblox.com/users/1561069702/profile" target="_blank">@AMMARUDES123</a></div>
-             <div class="job">Creator of this website</div>
+            <div class="name"><a href="https://www.roblox.com/users/1561069702/profile">@AMMARUDES123</a></div>
+            <div class="job">Creator of this website</div>
            </div>
          </div>
-         <i class='bx bx-user' id="log_out"></i>
+         <i class="bx bx-user" id="log_out" ></i>
      </li>
     </ul>
   </div>
   <section class="home-section">
-      <div class="text">Roblox Studio Models</div>
-      <div class="Roblox_Studio">
-        <div class="RS-1">
-            <a href="https://www.roblox.com/library/10901767801/Nuke-Gamepass" target="_blank"><img src="images/Coding.png" alt="#"></a>
-            <h2 style="text-align: center;">Nuke Gamepass</h2>
+      <div class="text">Roblox Studio</div>
+      <div class="home-area">
+        <hr style="border: 2px solid black;">
+        <div class="title-container"> 
+          <!-- <h1> Contacts List <h1> -->
         </div>
-        <div class="RS-2">
-            <a href="https://www.roblox.com/library/8484482868/GamepassShop" target="_blank"><img src="images/Coding.png" alt="#"></a>
-            <h2 style="text-align: center; padding: 0px 0px 0px 80px;">Donation Board</h2>
+          <div id="contacts-list" class="searching-area">
+            <ul> 
+              <li class="srch-1"><a href="#Pls Donate Map">Pls Donate Map</a></li>
+              <li class="srch-1"><a href="#EggHunt Model">EggHunt Model</a></li>
+              <li class="srch-1"><a href="#CashDrop System">CashDrop System</a></li>
+              <li class="srch-1"><a href="#Simulator Shop">Simulator Shop</a></li>
+              <li class="srch-1"><a href="#Stand Model">Stand Model</a></li>
+            </ul>
+          </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-item" id="Pls Donate Map">
+          <button class="accordion-header">
+            <strong>Pls Donate Map</strong><i class="fas fa-angle-down"></i>
+          </button>
+          <div class="accordion-body">
+            Description: Time to make a game like pls donate - using my map :D <br>
+            Link: Pls Donate Map <a href="https://www.roblox.com/library/9851588592/Pls-Donate-Map" target="_blank">Get it Now</a>
+          </div>
         </div>
-        <div class="RS-3">
-            <a href="https://www.roblox.com/library/9851588592/Pls-Donate-Map" target="_blank"><img src="images/Coding.png" alt="#"></a>
-            <h2 style="text-align: center; padding: 0px 0px 0px 80px;">Pls Donate Map</h2>
+        <br><br>
+        <div class="accordion-item" id="EggHunt Model">
+          <button class="accordion-header">
+            <strong>EggHunt Model</strong><i class="fas fa-angle-down"></i>
+          </button>
+          <div class="accordion-body">
+            Description: easter egg event coming soon :o<br>
+            Link: EggHunt Model <a href="https://www.roblox.com/library/9659892467/EggHunt-Model" target="_blank">Get it Now</a>
+          </div>
         </div>
+        <br><br>
+        <div class="accordion-item" id="CashDrop System">
+          <button class="accordion-header">
+            <strong>CashDrop System</strong><i class="fas fa-angle-down"></i>
+          </button>
+          <div class="accordion-body">
+            Description: Drop some cash boi <br>
+            Link: CashDrop System <a href="https://www.roblox.com/library/9607715790/CashDrop-System" target="_blank">Get it Now</a>
+          </div>
+        </div>
+        <br><br>
+        <div class="accordion-item" id="Simulator Shop">
+          <button class="accordion-header">
+            <strong>Simulator Shop</strong><i class="fas fa-angle-down"></i>
+          </button>
+          <div class="accordion-body">
+            Description: come on sell something<br>
+            Link: Simulator Shop <a href="https://www.roblox.com/library/9116977707/Simulator-Shop-NEW" target="_blank">Get it Now</a>
+          </div>
+        </div>
+        <br><br>
+        <div class="accordion-item" id="Stand Model">
+          <button class="accordion-header">
+            <strong>Stand Model</strong><i class="fas fa-angle-down"></i>
+          </button>
+          <div class="accordion-body" style="margin-bottom: 80px;">
+            Description: add this to pls donate map!!! <br>
+            Link: Stand Model <a href="https://www.roblox.com/library/9636924007/Stand-Model" target="_blank">Get it Now</a>
+          </div>
+        </div>
+      </div>
+        <script src="js/script.js"></script>
+        <script src="js/app.js"></script>
       </div>
   </section>
   <script>

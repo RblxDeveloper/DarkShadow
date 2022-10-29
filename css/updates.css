@@ -278,3 +278,9 @@
 .home-section .text {
     margin-right: 200px;
 }
+
+.updates-area .upd-1 h1 {
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: 4px underline;
+}
