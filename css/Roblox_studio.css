@@ -282,7 +282,7 @@
   list-style: none;
 }
 .srch-1 {
-  /* cursor: pointer; */
+  cursor: pointer;
   color: #fff;
   margin-bottom: 5px;
   padding: 10px;
