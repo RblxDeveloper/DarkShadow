@@ -374,6 +374,13 @@
     text-decoration: underline;
     color: #5b93ca;
   }
+
+  .accordion .accordion-item .accordion-item-header span {
+    padding: 10px;
+    background-color: crimson;
+    border-radius: 10px;
+    margin: -65px 0px 0px 282px;
+  }
   
   @media(max-width:767px) {
     html {

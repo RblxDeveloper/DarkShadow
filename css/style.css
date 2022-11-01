@@ -278,3 +278,8 @@
 .home-section .text {
     margin-right: 200px;
 }
+
+.home-section h1 {
+  text-align: center;
+  margin-top: 20px;
+}
