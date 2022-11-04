@@ -294,13 +294,14 @@
 }
 
 .searching-area {
-  width: 180px;
+  width: 170px;
   padding-top: 3px;
   background: #E4E9F7;
   height: 250px;
   overflow: hidden;
   overflow-y: scroll;
   margin-top: 12.5px;
+  margin-left: 10px;
 }
 
 .searching-area a {
@@ -380,6 +381,17 @@
     background-color: crimson;
     border-radius: 10px;
     margin: -65px 0px 0px 282px;
+  }
+
+  .listbtn button {
+    font-weight: bold;
+    margin: 10px 0px 0px 25px;
+    padding: 8px;
+    color: #fff;
+    width: 130px;
+    background-color: #1d1b31;
+    border-radius: 10px;
+    border: 2px solid #111;
   }
   
   @media(max-width:767px) {
