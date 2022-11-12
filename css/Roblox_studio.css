@@ -287,7 +287,8 @@
   margin-bottom: 5px;
   padding: 10px;
   text-align: center;
-  border-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
   border: 2px solid black;
   width: 160px;
   background-color: #1d1b31;
@@ -301,7 +302,6 @@
   overflow: hidden;
   overflow-y: scroll;
   margin-top: 12.5px;
-  margin-left: 10px;
 }
 
 .searching-area a {
@@ -385,13 +385,13 @@
 
   .listbtn button {
     font-weight: bold;
-    margin: 10px 0px 0px 25px;
-    padding: 8px;
+    margin-top: 10px;
+    padding: 10px;
     color: #fff;
-    width: 130px;
+    width: 160px;
     background-color: #1d1b31;
-    border-radius: 10px;
-    border: 2px solid #111;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
   }
   
   @media(max-width:767px) {
