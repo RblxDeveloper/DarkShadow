@@ -37,7 +37,7 @@
        <span class="tooltip">Roblox Studio</span>
      </li>
      <li>
-       <a href="updates.html">
+       <a href="update.html">
         <i class="fa-solid fa-list-check"></i>
          <span class="links_name">Updates</span>
        </a>
@@ -70,6 +70,7 @@
   </div>
   <section class="home-section">
       <div class="text">Roblox Studio</div>
+      <!-- <button class="toggle-dark-mode-button toggling">Dark/Light Mode</button> -->
       <div class="home-area">
         <hr style="border: 2px solid black;">
         <div class="title-container"> 
@@ -243,6 +244,10 @@
      closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the icons class
    }
   }
+
+  document.querySelector('.toggle-dark-mode-button').onclick = () => {
+  document.documentElement.classList.toggle('dark-mode');
+}
   </script>
   <script>
     function toggle() {
